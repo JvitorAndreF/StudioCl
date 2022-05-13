@@ -1,0 +1,270 @@
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fa4753cb;
+  border-radius: 20px;
+  border: 2px solid #ad5850;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fa4753cb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat";
+}
+
+.Top {
+  height: 88vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(../Images/pexels-artem-beliaikin-2624853.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.Top .Top-infos {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+}
+.Top .Top-infos h2 {
+  margin-top: 3em;
+  font-size: 2em;
+  font-weight: 800;
+  margin-bottom: 0.5em;
+  color: #fa4753cb;
+}
+.Top .Top-infos h5 {
+  font-weight: 500;
+  color: #eac5b8;
+  margin-top: 0.4em;
+  font-size: 3em;
+}
+.Top .Top-infos h6 {
+  margin-top: 1em;
+  color: #eac5b8;
+  font-weight: 600;
+}
+.Top .Top-infos p {
+  font-weight: 500;
+  color: #eac5b8;
+}
+
+.responsible h2 {
+  font-size: 2em;
+  font-weight: 500;
+  margin-bottom: 0.5em;
+  color: #fa4753cb;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../Images/pexels-this-is-zun-1164339.jpg);
+  padding: 15px;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 0.1em;
+}
+.responsible .responsible-infos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.responsible .responsible-infos .card {
+  width: 200px;
+  height: 220px;
+  position: relative;
+  background-color: transparent;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  margin: 2em;
+}
+.responsible .responsible-infos .card:hover {
+  transform: rotateY(180deg);
+  cursor: pointer;
+}
+.responsible .responsible-infos .card p {
+  font-size: 12px;
+  color: #6d6c6c;
+}
+.responsible .responsible-infos .card .front, .responsible .responsible-infos .card .back {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  padding-top: 10px;
+  position: absolute;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  display: table-row;
+  justify-content: center;
+}
+.responsible .responsible-infos .card .front {
+  background-color: #fff;
+}
+.responsible .responsible-infos .card .front .img {
+  width: 80%;
+  margin-left: 10%;
+  height: 70%;
+  border-radius: 5px;
+}
+.responsible .responsible-infos .card .back {
+  transform: rotateY(180deg);
+  background-color: #fff;
+}
+.responsible .responsible-infos .card .back a {
+  color: #1a1b1f;
+  transition: all 0.2s linear;
+  margin: 47%;
+}
+.responsible .responsible-infos .card .back a:hover {
+  color: #e1306c;
+}
+.responsible .responsible-infos .card .back p {
+  text-align: center;
+}
+
+.jobs h2 {
+  font-size: 2em;
+  font-weight: 500;
+  margin-bottom: 0.5em;
+  color: #fa4753cb;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../Images/pexels-this-is-zun-1164339.jpg);
+  padding: 15px;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 0.1em;
+}
+.jobs .jobs-types {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.jobs .jobs-types .job .image {
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  border: 1px solid red;
+  border-radius: 50%;
+}
+.jobs .jobs-types .job p {
+  text-align: center;
+}
+.jobs .jobs-types .job:nth-child(3) .image {
+  border: none;
+  background: url(../Images/cutilagem.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.jobs .jobs-types .job:nth-child(2) .image {
+  border: none;
+  background: url(../Images/gel.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.jobs .jobs-types .job:nth-child(1) .image {
+  border: none;
+  background: url(../Images/fibra.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.location {
+  margin-top: 1.5em;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../Images/pexels-this-is-zun-1164339.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 1em;
+}
+.location .location-details {
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+  margin-top: 0.5em;
+}
+.location .location-details .location-local {
+  display: flex;
+}
+.location .location-details .location-local i {
+  font-size: 4.5em;
+  margin-left: 2px;
+  color: #fa4753cb;
+}
+.location .location-details .location-local p {
+  color: #eac5b8;
+  font-weight: 400;
+}
+.location .location-details .location-script {
+  color: #eac5b8;
+  font-size: 2em;
+  font-weight: 500;
+  width: 40%;
+  text-align: center;
+}
+.location .location-subscript {
+  display: flex;
+  justify-content: center;
+}
+.location .location-subscript a {
+  padding: 5px;
+  background-color: #fa4753cb;
+  color: #eac5b8;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+footer {
+  padding: 1em;
+  background-color: #cacaca;
+}
+footer h2 {
+  text-align: center;
+  padding: 15px;
+  color: #fa4753cb;
+}
+footer p:last-child {
+  margin-bottom: 0;
+}
+footer p:last-child::selection {
+  background-color: #fa4753cb;
+}
+footer a {
+  text-decoration: none;
+}
+
+/* Medias */
+@media (max-width: 450px) {
+  .Top .Top-infos {
+    width: 60%;
+  }
+  .Top .Top-infos h5 {
+    font-size: 1.7em;
+  }
+  .Top .Top-infos h6 {
+    margin-top: 0.3em;
+  }
+  .Top .Top-infos p {
+    font-weight: 400;
+  }
+
+  .jobs-types {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .location .location-script {
+    display: none;
+  }
+
+  .responsible .responsible-infos .certifications p {
+    margin-bottom: 5px;
+  }
+}
+
+/*# sourceMappingURL=Style.css.map */
